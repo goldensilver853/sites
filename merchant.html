@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>Merchant Supply Quick Links</title>
+<style>
+          body {
+           overflow: hidden;
+		   background-image: url('bg.png');
+		   background-repeat: no-repeat;
+		   background-position: center;
+		   transition: background-color 0.7s, background-image 0.7s;
+          }
+          
+          * {
+		       font-family: Arial, Helvetica, sans-serif;
+          }
+          #main {
+            margin: auto;
+            top: 100%;
+            transform: translateY(155%);
+            width: 44.000em;
+            border-radius: 12px;
+            transition: background-image 0.7s;
+			background-color: #e1e4ea;
+          }
+		  .mastercard {
+			background-image: url('mastercard.svg');
+			background-size: 40%;
+			transition: background-color 0.7s, background-image 0.7s;
+			background-color: #ff7b75;
+		  }
+		  .interac {
+			background-image: url('interac.svg');
+			background-size: 40%;
+			transition: background-color 0.7s,  background-image 0.7s;
+			background-color: #fffc75;
+		  }
+		  .amex {
+			background-image: url('americanexpress.svg');
+			background-size: 40%;
+			transition: background-color 0.7s, background-image 0.7s;
+			background-color: #75aaff;
+		  }
+		  .apple {
+			background-image: url('apple.svg');
+			background-size: 40%;
+			transition: background-color 0.7s, background-image 0.7s;
+			background-color: #cecece;
+		  }
+		  .android {
+			background-image: url('android.svg');
+			background-size: 40%;
+			transition: background-color 0.7s, background-image 0.7s;
+			background-color: #71f287;
+		  }
+</style>
+</head>
+<body id="dog">
+<h1 align=center>Merchant Supply Quick Links</h1>
+<div id="main">
+<p align=center>   
+<a align=center id="link1" href="https://brand.mastercard.com/brandcenter/mastercard-brand-mark/orderdecals.html"><span id="tab1"><img style="width: 25%" src="mastercard.svg"></img></span></a>
+<a align=center id="link2" href="https://merchant-supplies.americanexpress.com/?locale=en_CA&intlink=ca-mer-pop-launch#/catalog/All"><span id="tab1"><img style="width: 15%" src="americanexpress.svg"></img></span></a>
+<a align=center id="link3" href="https://interacposcentre.ca/en/by-product-type/interac-debit/product/listing"><span id="tab1"><img style="width: 15%" src="interac.svg"></img></span></a>
+<a align=center id="link4" href="https://www.applepaysupplies.com/applepaykit.html"><span id="tab1"><img style="width: 15%" src="apple.svg"></img></span></a>
+<a align=center id="link5" href="https://www.android.com/intl/en_ca/pay/form/"><span id="tab1"><img style="width: 12%" src="android.svg"></img></span></a>
+</p>
+</div>
+<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+<script>
+	    $("#link1").hover(function () {
+			$("#dog").toggleClass("mastercard");
+        });
+		$("#link2").hover(function () {
+			$("#dog").toggleClass("amex");
+        });
+		$("#link3").hover(function () {
+			$("#dog").toggleClass("interac");
+        });
+		$("#link4").hover(function () {
+			$("#dog").toggleClass("apple");
+        });
+		$("#link5").hover(function () {
+			$("#dog").toggleClass("android");
+        });
+</script>
+</body>
+</html>
