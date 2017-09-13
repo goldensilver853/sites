@@ -1,0 +1,376 @@
+<html>
+<head>
+<title>Blender Hotkeys</title>
+<style>
+body, table, td{
+	font: 15px arial, sans-serif;
+}
+body {
+	background-color: #234c8e;
+}
+#mainhead {
+	color: white;
+}
+#main {
+	margin: auto;
+	border-radius: 10px;
+	background-color: orange;
+	width: 50%;
+	border-width: 5px;
+	border-color: white;
+	border-style: solid;
+}
+#table1 {
+	margin: auto;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+}
+tr:nth-child(even) {
+    background-color: #74a6f7;
+	cursor: pointer;
+}
+tr:nth-child(odd) {
+    background-color: #ffcd63;
+	cursor: pointer;
+}
+th {
+	cursor: auto;
+}
+</style>
+</head>
+<body>
+<h1 align=center id="mainhead">Blender Hotkeys</h1>
+<br>
+<div id="main">
+<p>*This page assumes you have not changed any of the keybinds. You are responsible for adapting this content to your own settings in Blender.
+<table id="table1">
+<tr>
+<th id="1">Edit Mode</th><th id="21">Both Modes</th><th id="55">Object Mode</th>
+</tr>
+<tr>
+<td id="2">P</td><td id="22">X, Y and Z</td><td id="56">Ctrl-Tab (Object)</td>
+</tr>
+<tr>
+<td id="3">Ctrl-R</td><td id="23">Shift-S</td><td id="57">Alt-C</td>
+</tr>
+<tr>
+<td id="4">K</td><td id="24">Shift-F</td><td id="58">Ctrl-A-S</td>
+</tr>
+<tr>
+<td id="5">Ctrl-B</td><td id="25">G</td><td id="59">Ctrl-J</td>
+</tr>
+<tr>
+<td id="6">V</td><td id="26">H</td><td></td>
+</tr>
+<tr>
+<td id="7">Ctrl-V</td><td id="27">Tab</td><td></td>
+</tr>
+<tr>
+<td id="8">L</td><td id="28">Numpad1</td><td></td>
+</tr>
+<tr>
+<td id="9">Ctrl-Numpad+</td><td id="29">Ctrl-Numpad1</td><td></td>
+</tr>
+<tr>
+<td id="10">Alt-RClick</td><td id="30">Numpad3</td><td></td>
+</tr>
+<tr>
+<td id="11">Ctrl-N</td><td id="31">Ctrl-Numpad3</td><td></td>
+</tr>
+<tr>
+<td id="12">Ctrl-Shift-Alt-M</td><td id="32">Numpad5</td><td></td>
+</tr>
+<tr>
+<td id="13">F</td><td id="33">Numpad7</td><td></td>
+</tr>
+<tr>
+<td id="14">E</td><td id="34">Ctrl-Numpad7</td><td></td>
+</tr>
+<tr>
+<td id="15">O</td><td id="35">Alt-H</td><td></td>
+</tr>
+<tr>
+<td id="16">Ctrl-I</td><td id="36">Shift-H</td><td></td>
+</tr>
+<tr>
+<td id="17">Ctrl-E</td><td id="37">Spacebar</td><td></td>
+</tr>
+<tr>
+<td id="18">Ctrl-F</td><td id="38">Ctrl-MouseDrag</td><td></td>
+</tr>
+<tr>
+<td id="19">Ctrl-Tab (Edit)</td><td id="39">N</td><td></td>
+</tr>
+<tr>
+<td></td><td id="40">Shift-Ctrl-Alt-C</td><td></td>
+</tr>
+<tr>
+<td></td><td id="41">A</td><td></td>
+</tr>
+<tr>
+<td></td><td id="42">B</td><td></td>
+</tr>
+<tr>
+<td></td><td id="43">C</td><td></td>
+</tr>
+<tr>
+<td></td><td id="44">Shift-D</td><td></td>
+</tr>
+<tr>
+<td></td><td id="45">W</td><td></td>
+</tr>
+<tr>
+<td></td><td id="46">X</td><td></td>
+</tr>
+<tr>
+<td></td><td id="47">S</td><td></td>
+</tr>
+<tr>
+<td></td><td id="48">Z</td><td></td>
+</tr>
+<tr>
+<td></td><td id="49">Ctrl-Z</td><td></td>
+</tr>
+<tr>
+<td></td><td id="50">Shift-Ctrl-Z</td><td></td>
+</tr>
+<tr>
+<td></td><td id="51">Ctrl-F3</td><td></td>
+</tr>
+<tr>
+<td></td><td id="52">Alt-F3</td><td></td>
+</tr>
+<tr>
+<td></td><td id="53">Numpad0</td><td></td>
+</tr>
+<tr>
+<td></td><td id="54">Ctrl-Alt-Numpad0</td><td></td>
+</tr>
+</table>
+<br>
+</div>
+<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+<script>
+        $( "#2" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>P</h1><p>The P key in Blender will separate any selected part of a mesh into a separate object.</p><p>Mode: Edit mode only</p><p>Usage example: Separating a side of a box for use as a lid in a 3D printing scenario.</p><p>In action:</p><br><img src="2.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#3" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>R</h1><p>The R key in Blender will cut lines into any mesh in edit mode. You can change the amount of lines by scrolling with the scroll wheel.<p>Mode: Edit mode only<p>Usage example: Slicing a cube into separate sections for extruding.<p>In action:<br><img src="3.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+
+		$( "#4" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>K</h1><p>The K key in Blender will cut lines into any mesh in edit mode. For best results, cut lines between edges and/or verticies only.<p>Mode: Edit mode only<p>Usage example: Dividing a cube into triangular sections.<p>In action:<br><img src="4.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#5" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Ctrl-B</h1><p>The Ctrl-B key combination in Blender will bevel edges on meshes. The resolution of the bevel can be changed by scrolling during the process.<p>Mode: Edit mode only<p>Usage example: Dividing a cube into triangular sections.<p>In action:<br><img src="5.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#6" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>V</h1><p>The V key in Blender will cut edges away from meshes. You can use this to open a cube and stare at its insides.<p>Mode: Edit mode only<p>Usage example: Creating a mouth for an animated video.<p>In action:<br><img src="6.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#7" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Ctrl-V</h1><p>The Ctrl-V key combination in Blender will open the vertex edit menu. You can use this to access advanced settings that can be used to modify verticies.<p>Mode: Edit mode only<p>Usage example: Whatever it is normally used for.<p>In action:<br><img src="7.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#8" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>L</h1><p>The L key in Blender will select mesh components based on attributes shared among faces and other mesh components. You can use this to select things by material or other things.<p>Mode: Edit mode only<p>Usage example: Selecting all faces that are blue.<p>In action:<br><img src="8.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>>';
+        });
+		
+		$( "#9" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Ctrl-Numpad+</h1><p>The Ctrl-Numpad+ key combination in Blender will select verticies, edges and faces that are connected together sequentially. You can use this to select things one at a time.<p>Mode: Edit mode only<p>Usage example: Carefully selecting a certain number of verticies on a circle.<p>In action:<br><img src="9.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#10" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Alt-RClick</h1><p>The Alt Right Click mouse and key combination in Blender will select connected edges and verticies that are connected together on an edge or a line. You can use this to the edge of a mesh<p>Mode: Edit mode only<p>Usage example: Selecting the outside of a circle.<p>In action:<br><img src="10.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#11" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Ctrl-N</h1><p>The Ctrl-N key combination in Blender will correct incorrect normals on faces.<p>Mode: Edit mode only<p>Usage example: Getting rid of the dark faces on a model.<p>In action:<br><img src="11.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#12" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Ctrl-Shift-Alt-M</h1><p>The Ctrl-Shift-Alt-M key combination in Blender will select non-manifold edges.<p>Mode: Edit mode only<p>Usage example: Finding non-manifold edges that would prevent a model from being 3-D printable.<p>In action:<br><img src="12.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#13" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>F</h1><p>The F key in Blender will fill an area between 2 or more verticies<p>Mode: Edit mode only<p>Usage example: Filling an empty hole.<p>In action:<br><img src="13.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#14" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>E</h1><p>The E key in Blender will extrude an area in any direction from a mesh.<p>Mode: Edit mode only<p>Usage example: Making a long cylindrical stick.<p>In action:<br><img src="14.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#15" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>O</h1><p>The O key in Blender toggles the proportional editing setting.<p>Mode: Edit mode only<p>Usage example: Making a mountain in a heavily subdivided mesh.<p>In action:<br><img src="15.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#16" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Ctrl-I</h1><p>The Ctrl-I key combination in Blender selects the inverse of what is currently selected.<p>Mode: Edit mode only<p>Usage example: Inverting your selection.<p>In action:<br><img src="16.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#17" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Ctrl-E</h1><p>The Ctrl-E key combination in Blender opens the edge menu.<p>Mode: Edit mode only<p>Usage example: Being edgy.<p>In action:<br><img src="17.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#18" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Ctrl-F</h1><p>The Ctrl-F key combination in Blender opens the face menu.<p>Mode: Edit mode only<p>Usage example: Going face to face.<p>In action:<br><img src="18.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#19" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Ctrl-Tab (Edit Mode)</h1><p>The Ctrl-F key combination in Blender in edit mode allows you to switch between vertex, edge and face selection.<p>Mode: Edit mode only<p>Usage example: Quick way of switching selection modes without using the mouse.<p>In action:<br><img src="19.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#22" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>X, Y and Z</h1><p>The X, Y and Z keys in Blender allow you to manipulate objects on the 3 axis to ensure accuracy.<p>Mode: Object and Edit modes<p>Usage example: Making straight extrusions.<p>In action:<br><img src="22.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#23" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Shift-S</h1><p>The Shift-S key combination in Blender force the snap control (holding Ctrl during object manipulation) to snap based on grid squares.<p>Mode: Object and Edit modes<p>Usage example: Making correctly sized objects.<p>In action:<br><img src="23.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#24" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Shift-F</h1><p>The Shift-F key combination in Blender allows you to fly and walk around in your scene.<p>Mode: Object and Edit modes<p>Usage example: Seeing what your movie will look like from the perspective of the viewer.<p>In action:<br><img src="24.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#25" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>G</h1><p>The G key in Blender grabs objects and mesh components.<p>Mode: Object and Edit modes<p>Usage example: Moving a cube.<p>In action:<br><img src="25.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#26" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>H</h1><p>The H key in Blender hides objects that are obstructing the view of something else.<p>Mode: Object and Edit modes<p>Usage example: Hiding a face so you can see behind it.<p>In action:<br><img src="26.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#27" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Tab</h1><p>The Tab key in Blender switches between object and edit modes.<p>Mode: Object and Edit modes<p>Usage example: Switching between object and edit modes. <p>In action:<br><img src="27.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#28" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Numpad1</h1><p>The Numpad1 key in Blender sets the viewing window to the front of the scene.<p>Mode: Object and Edit modes<p>Usage example: Looking at the otherside of an object. <p>In action:<br><img src="28.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#29" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Ctrl-Numpad1</h1><p>The Ctrl-Numpad1 key combination in Blender sets the viewing window to the back of the scene.<p>Mode: Object and Edit modes<p>Usage example: Looking at the otherside of an object. <p>In action:<br><img src="29.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#30" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Numpad3</h1><p>The Numpad3 key in Blender sets the viewing window to the right of the scene.<p>Mode: Object and Edit modes<p>Usage example: Looking at the otherside of an object. <p>In action:<br><img src="30.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#31" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Ctrl-Numpad3</h1><p>The Ctrl-Numpad3 key combination in Blender sets the viewing window to the left of the scene.<p>Mode: Object and Edit modes<p>Usage example: Looking at the otherside of an object. <p>In action:<br><img src="31.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#32" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Numpad5</h1><p>The Numpad5 key in Blender toggles between perspective view (default) and orthogonal view.<p>Mode: Object and Edit modes<p>Usage example: Getting a different perspective of the scene. <p>In action:<br><img src="32.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#33" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Numpad7</h1><p>The Numpad7 key in Blender sets the viewing window to the top of the scene.<p>Mode: Object and Edit modes<p>Usage example: Seeing the other side of an object. <p>In action:<br><img src="33.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#34" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Ctrl-Numpad7</h1><p>The Ctrl-Numpad7 key combination in Blender sets the viewing window to the bottom of the scene.<p>Mode: Object and Edit modes<p>Usage example: Seeing the other side of an object. <p>In action:<br><img src="34.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#35" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Alt-H</h1><p>The Alt-H key combination in Blender unhides all hidden objects.<p>Mode: Object and Edit modes<p>Usage example: Seeing previously hidden objects. <p>In action:<br><img src="35.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#36" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Shift-H</h1><p>The Shift-H key combination in Blender hides what is not currently selected.<p>Mode: Object and Edit modes<p>Usage example: Hiding unnecessary items. <p>In action:<br><img src="36.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#37" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Spacebar</h1><p>The Spacebar in Blender opens a menu that is used to search for useful options.<p>Mode: Object and Edit modes<p>Usage example: Searching for an instruction that you cannot remember the key combination for. <p>In action:<br><img src="37.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#38" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Ctrl-Mouse Drag</h1><p>The Ctrl-Mouse Drag key and mouse combination in Blender allows you to select objects by lassoing them.<p>Mode: Object and Edit modes<p>Usage example: Selecting an odd pattern of verticies or faces. <p>In action:<br><img src="38.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#39" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>N</h1><p>The N key in Blender opens a sidebar on the right which allows you to quickly modify the parameters of an object.<p>Mode: Object and Edit modes<p>Usage example: Selecting the Length option to view the length of edges on a mesh. <p>In action:<br><img src="39.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#40" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Shift-Ctrl-Alt-C</h1><p>The Shift-Ctrl-Alt-C key combination in Blender allows you to set the geometric reference point of an object.<p>Mode: Object and Edit modes<p>Usage example: Setting the geometric reference point to the center of an object. <p>In action:<br><img src="40.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#41" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>A</h1><p>The A key in Blender selects everything in the 3-D viewing window.<p>Mode: Object and Edit modes<p>Usage example: Selecting all faces to add a new material. <p>In action:<br><img src="41.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#42" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>B</h1><p>The B key in Blender allows you to draw a box and select everything within it.<p>Mode: Object and Edit modes<p>Usage example: Selecting certain faces on a subdivided mesh. <p>In action:<br><img src="42.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#43" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>C</h1><p>The C key in Blender allows you to select things by drawing a circle around them.<p>Mode: Object and Edit modes<p>Usage example: Selecting certain faces on a subdivided mesh. <p>In action:<br><img src="43.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#44" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Shift-D</h1><p>The Shift-D key combination in Blender allows you to duplicate objects.<p>Mode: Object and Edit modes<p>Usage example: Copying and pasting a dog. <p>In action:<br><img src="44.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#45" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>W</h1><p>The W key in Blender opens a menu that you can use to then do things such as subdivide a mesh.<p>Mode: Object and Edit modes<p>Usage example: Subdividing a selected mesh. <p>In action:<br><img src="45.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#46" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>X</h1><p>The X key in Blender allows you to delete objects.<p>Mode: Object and Edit modes<p>Usage example: Removing a stray edge. <p>In action:<br><img src="46.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#47" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>S</h1><p>The S key in Blender allows you to scale objects.<p>Mode: Object and Edit modes<p>Usage example: Increasing the size of an object for 3-D printing. <p>In action:<br><img src="47.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#48" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Z</h1><p>The Z key in Blender allows you to hide objects that you do not need to see.<p>Mode: Object and Edit modes<p>Usage example: Hiding a face that is in the way. <p>In action:<br><img src="48.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#49" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Ctrl-Z</h1><p>The Ctrl-Z key combination in Blender allows you to undo your last action.<p>Mode: Object and Edit modes<p>Usage example: Undoing an inadvertantly deleted face. <p>In action:<br><img src="49.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#50" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Shift-Ctrl-Z</h1><p>The Shift-Ctrl-Z key combination in Blender allows you to redo your last action.<p>Mode: Object and Edit modes<p>Usage example: Redoing a deleted face. <p>In action:<br><img src="50.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#51" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Ctrl-F3</h1><p>The Ctrl-F3 key combination in Blender allows you to take a screenshot of the Blender program.<p>Mode: Object and Edit modes<p>Usage example: Making a Blender tutorial. <p>In action:<br><img src="51.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#52" ).click(function() {
+		document.getElementById("main").innerHTML = '<<h1 align=center>Alt-F3</h1><p>The Alt-F3 key combination in Blender allows you to take a video of the Blender program.<p>Mode: Object and Edit modes<p>Usage example: Making a Blender tutorial. <p>In action:<br><img src="52.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#53" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Numpad0</h1><p>The Numpad0 key in Blender changes your view to that of the camera.<p>Mode: Object and Edit modes<p>Usage example: Making sure the right parts of your scene will be in the frame. <p>In action:<br><img src="53.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#54" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Ctrl-Alt-Numpad0</h1><p>The Ctrl-Alt-Numpad0 key in Blender changes the camera view to your current view.<p>Mode: Object and Edit modes<p>Usage example: Changing the camera view. <p>In action:<br><img src="54.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#56" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Ctrl-Tab (Object Mode)</h1><p>The Ctrl-Tab key in Blender in object mode changes the mode to the weight paint mode.<p>Mode: Object and Edit modes<p>Usage example: Changing the weighting of an object. <p>In action:<br><img src="56.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#57" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Alt-C</h1><p>The Alt-C key combination in Blender allows you to convert text and curves to mesh.<p>Mode: Object and Edit modes<p>Usage example: Making text to mesh for extrusion. <p>In action:<br><img src="57.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#58" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Ctrl-A-S</h1><p>The Ctrl-A-S key combination in Blender allows you to apply scale.<p>Mode: Object and Edit modes<p>Usage example: Applying scale to an object. <p>In action:<br><img src="58.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+		
+		$( "#59" ).click(function() {
+		document.getElementById("main").innerHTML = '<h1 align=center>Ctrl-J</h1><p>The Ctrl-J key combination in Blender allows you to combine two separate objects into one (not a replacement for boolean).<p>Mode: Object and Edit modes<p>Usage example: Making two separate objects into one for convienence. <p>In action:<br><img src="59.gif" style="width:50%"></img><br><button class="return" onclick="{location.reload();}">Back</button>';
+        });
+</script>
+</body>
+</html>
